@@ -58,20 +58,6 @@ const ReelsTimeLine = [
       title: "1972",
       type: "reel",
     },
-      {
-      id: 5,
-      image: "/5.jpg",
-      url: "https://www.instagram.com/p/DL7rkf_OFpl/",
-      title: "1972",
-      type: "reel",
-    },
-      {
-      id: 5,
-      image: "/5.jpg",
-      url: "https://www.instagram.com/p/DL7rkf_OFpl/",
-      title: "1972",
-      type: "reel",
-    },
   ]
 
    const timeline = [
