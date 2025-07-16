@@ -166,7 +166,7 @@ const ReelsTimeLine = [
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 flex items-center justify-center bg-[#002C51]">
           <img
-            src="/banner-55-anos.png"
+            src="/bannerPrincipal.jpg"
             alt="Banner 55 años UNICAMACHO"
             className="max-w-full max-h-full object-contain"
           />
