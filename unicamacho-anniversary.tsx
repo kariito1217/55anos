@@ -225,7 +225,7 @@ const ReelsTimeLine = [
             <h2 className="text-4xl md:text-5xl font-bold text-[#002C51] mb-4">Nuestros Logros</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               En Unicamacho cada logro cuenta, cada persona deja huella y cada historia marca la diferencia en este
-              camino de construcción y formación.
+              camino de construcción y formación aaaaaa.
             </p>
           </div>
 
