@@ -58,6 +58,7 @@ const ReelsTimeLine = [
       title: "1972",
       type: "reel",
     },
+    
   ]
 
    const timeline = [
@@ -225,7 +226,7 @@ const ReelsTimeLine = [
             <h2 className="text-4xl md:text-5xl font-bold text-[#002C51] mb-4">Nuestros Logros</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               En Unicamacho cada logro cuenta, cada persona deja huella y cada historia marca la diferencia en este
-              camino de construcción y formación aaaaaa.
+              camino de construcción y formación.
             </p>
           </div>
 
@@ -341,7 +342,7 @@ const ReelsTimeLine = [
   {/* Timeline Reels Section */}
 <div className="mt-20 mb-20">
   {/* Móvil: Scroll horizontal */}
-  <div className="md:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory px-2">
+  <div className="custom:hidden flex gap-4 overflow-x-auto snap-x snap-mandatory px-2">
     {ReelsTimeLine.map((post) => (
       <a
         key={post.id}
@@ -382,7 +383,7 @@ const ReelsTimeLine = [
   </div>
 
   {/* Escritorio: Grid en grupos */}
-  <div className="hidden md:block">
+  <div className="hidden custom:block">
     {chunkArray(ReelsTimeLine, 4).map((group, i) => (
       <div
         key={i}
