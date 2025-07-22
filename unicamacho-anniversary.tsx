@@ -643,7 +643,7 @@ const dreamOnPosts = [
   <div className="w-32 h-1 mt-4 mx-auto bg-gradient-to-r from-[#002C51] to-[#1B4B85] rounded-full" />
 </div>
 
-h
+
 {/* Lista de capítulos */}
 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
   {[
