@@ -148,6 +148,7 @@ const ReelsTimeLine = [
   ]
 
 
+
   const openInstagramPost = (url: string) => {
     window.open(url, "_blank")
   }
@@ -159,6 +160,80 @@ const ReelsTimeLine = [
   const closeModal = () => {
     setSelectedPost(null)
   }
+
+
+const dreamOnPosts = [
+  {
+    id: 1,
+    image: "/dreamon-1.jpg",
+    title: "Celebración con la comunidad",
+    type: "foto",
+  },
+  {
+    id: 2,
+    image: "/dreamon-2.jpg",
+    title: "Momentos especiales UNIAJC",
+    type: "foto",
+  },
+  {
+    id: 3,
+    image: "/dreamon-3.jpg",
+    title: "Galería de recuerdos",
+    type: "foto",
+  },
+  {
+    id: 4,
+    image: "/dreamon-4.jpg",
+    title: "Instantes que inspiran",
+    type: "foto",
+  },
+ {
+  id: 5,
+  image: "/dreamon-5.jpg",
+  title: "Celebración entre generaciones",
+  type: "foto",
+},
+{
+  id: 6,
+  image: "/dreamon-6.jpg",
+  title: "Un recuerdo que nos une",
+  type: "foto",
+},
+{
+  id: 7,
+  image: "/dreamon-7.jpg",
+  title: "Rostros que hacen historia",
+  type: "foto",
+},
+{
+  id: 8,
+  image: "/dreamon-8.jpg",
+  title: "Voces que construyen futuro",
+  type: "foto",
+},
+{
+  id: 9,
+  image: "/dreamon-9.jpg",
+  title: "Alegría que se contagia",
+  type: "foto",
+},
+{
+  id: 10,
+  image: "/dreamon-10.jpg",
+  url: "https://www.instagram.com/p/DJnqkHMMu1B/",
+  title: "Revive cada instante",
+  type: "reel",
+},
+{
+  id: 11,
+  image: "/dreamon-11.jpg",
+  url: "https://www.instagram.com/p/DJkdGhPJuqX/",
+  title: "Lo dimos todo en la pista",
+  type: "reel",
+},
+
+];
+
 
   return (
     <div className="min-h-screen bg-white overflow-hidden">
@@ -538,6 +613,127 @@ const ReelsTimeLine = [
             </div>
           </div>
         </section>
+
+{/* On Section */}
+<section className="pt-10 pb-20 bg-gradient-to-br from-white to-gray-50 mt-0">
+  <div className="max-w-7xl mx-auto px-6">
+   <div className="text-center mb-16 relative">
+  {/* Estrella decorativa opcional */}
+  <div className="absolute left-1/2 transform -translate-x-1/2 -top-8">
+    <svg
+      className="w-10 h-10 text-yellow-400 animate-pulse"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+    >
+      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.217 3.745a1 1 0 00.95.69h3.947c.969 0 1.371 1.24.588 1.81l-3.2 2.32a1 1 0 00-.364 1.118l1.218 3.745c.3.921-.755 1.688-1.54 1.118l-3.2-2.32a1 1 0 00-1.176 0l-3.2 2.32c-.784.57-1.838-.197-1.539-1.118l1.218-3.745a1 1 0 00-.364-1.118l-3.2-2.32c-.783-.57-.38-1.81.588-1.81h3.947a1 1 0 00.95-.69l1.217-3.745z" />
+    </svg>
+  </div>
+
+  {/* Título */}
+  <h2 className="text-5xl md:text-6xl font-extrabold text-[#002C51] tracking-tight mb-4">
+    Dream On
+  </h2>
+
+  {/* Subtítulo */}
+  <p className="text-lg md:text-xl text-gray-600 max-w-xl mx-auto">
+    Sigue soñando con nosotros. Este viaje apenas comienza.
+  </p>
+
+  {/* Línea decorativa degradada */}
+  <div className="w-32 h-1 mt-4 mx-auto bg-gradient-to-r from-[#002C51] to-[#1B4B85] rounded-full" />
+</div>
+
+h
+{/* Lista de capítulos */}
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
+  {[
+    "Capítulo 1: El pasado se ha ido",
+    "Capítulo 2: Tienes que perder para aprender a ganar",
+    "Capítulo 3: Viví y aprendí de los tontos y los sabios",
+    "Capítulo 4: Canta conmigo aunque sea por hoy",
+    "Capítulo 5: Sueña hasta que tus sueños se hagan realidad",
+    "Capítulo 6: Sigue soñando, sigue soñando, sigue soñando"
+  ].map((cap, i) => (
+    <div
+      key={i}
+      className="group flex items-center gap-4 p-5 bg-white border border-[#002C51]/20 rounded-2xl shadow-md hover:shadow-xl hover:bg-[#002C51]/5 transition-all duration-300"
+    >
+      {/* Ícono decorativo - check moderno */}
+      <div className="w-10 h-10 flex items-center justify-center bg-[#002C51]/10 text-[#002C51] rounded-full group-hover:scale-110 transition-transform duration-300">
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+      </div>
+
+      {/* Texto del capítulo */}
+      <span className="text-[#002C51] font-medium text-base md:text-lg leading-snug">
+        {cap}
+      </span>
+    </div>
+  ))}
+</div>
+
+
+
+
+    {/* Galería horizontal tipo slider */}
+   <div className="overflow-x-auto flex gap-6 pb-4 px-1">
+  {dreamOnPosts.map((post) => (
+    <div
+  key={post.id}
+  className={`flex-shrink-0 h-80 bg-white rounded-3xl overflow-hidden shadow-md cursor-pointer relative flex items-center justify-center ${
+    post.type === "reel" || post.type === "video" ? "w-[220px]" : "min-w-[280px]"
+  }`}
+  onClick={() => {
+    if (post.url) window.open(post.url, "_blank");
+  }}
+>
+      <img
+        src={post.image || "/placeholder.svg"}
+        alt={post.title}
+        className="max-h-full max-w-full object-contain"
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute bottom-4 left-4 right-4">
+          <h3 className="text-white font-semibold text-sm mb-1">{post.title}</h3>
+          <span className="text-white/80 text-xs capitalize">{post.type}</span>
+        </div>
+      </div>
+
+      {/* Play button para reels/videos */}
+      {(post.type === "reel" || post.type === "video") && (
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+          <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+            <div className="w-0 h-0 border-l-[8px] border-l-white border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent ml-1"></div>
+          </div>
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
+
+  </div>
+</section>
+
+        
+
+
+
+
+
 
       {/* Podcast Section */}
       <section className="py-20 bg-[#002C51] relative overflow-hidden">
